@@ -1,2 +1,2 @@
-# sloppycards
-adding one sentance as i have been instructed to do so 
+# SloppyCards
+Sloppy Cards is an open-source drinking game managed and hosted using free services (Google Docs & Github Pages)
