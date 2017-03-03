@@ -1,0 +1,24 @@
+#card {
+  width: 98%;
+  height: 98%;
+  margin: auto;
+  border: 5px solid #000;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#rule {
+  background: white;
+  text-align: center;
+  margin: auto;
+  font: 45px arial, sans-serif;
+  vertical-align: middle;
+  padding: 10px;
+}
