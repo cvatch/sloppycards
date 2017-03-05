@@ -8,6 +8,7 @@ function checkStorage() {
     initSheet();
   } else {
     spreadSheet = JSON.parse(localStorage.getItem("sloppyCards"));
+    getCardType();
   }
 }
 
