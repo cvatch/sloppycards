@@ -1,3 +1,21 @@
+// Settings for changes without much coding
+var settings = {};
+settings.cardAnimation = {};
+settings.cardAnimation.duration = {};
+settings.cardAnimation.delay = {};
+
+// Card animation settings
+settings.cardAnimation.perspectiveOrigin = "center";
+settings.cardAnimation.direction = "normal";
+settings.cardAnimation.flip = "left";
+settings.cardAnimation.turns = "1";
+settings.cardAnimation.overshoot = "0%";
+settings.cardAnimation.duration.value = "2500ms";
+settings.cardAnimation.duration.randomness = "30%";
+settings.cardAnimation.timing = "ease";
+settings.cardAnimation.delay.value = "0ms";
+settings.cardAnimation.delay.randomness = "0%";
+
 var spreadSheet;
 var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1x4xXJVd33F6oNpUXZXMd5mhcRL-c3TntHLe-ontykdc/pubhtml';
 var ruleDiv = document.getElementById("rule");
@@ -34,7 +52,7 @@ function saveSheet(data, tabletop) {
 }
 
 function startAnimation(type) {
-  alicejs.cheshire({"perspectiveOrigin": "center","direction": "normal","elems": ["card"],"flip": "left","turns": "1","overshoot": "0%","duration": {"value": "2500ms","randomness": "30%"},"timing": "ease","delay": {"value": "0ms","randomness": "0%"},"iteration": "1","playstate": "running"});
+  alicejs.cheshire({"perspectiveOrigin": settings.cardAnimation.perspectiveOrigin,"direction": settings.cardAnimation.direction,"elems": ["card"],"flip": settings.cardAnimation.flip,"turns": settings.cardAnimation.turns,"overshoot": settings.cardAnimation.overshoot,"duration": {"value": settings.cardAnimation.duration.value,"randomness": settings.cardAnimation.duration.randomness},"timing": settings.cardAnimation.timing,"delay": {"value": settings.cardAnimation.delay.value,"randomness": settings.cardAnimation.delay.randomness},"iteration": "1","playstate": "running"});
   var ruleCount = eval("spreadSheet." + type + ".elements.length");
   var randomNumber = Math.floor(Math.random() * ruleCount); 
   ruleDiv.innerHTML = eval("spreadSheet." + type + ".elements[randomNumber].rule");
