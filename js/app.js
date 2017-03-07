@@ -10,10 +10,10 @@ settings.cardAnimation.direction = "normal";
 settings.cardAnimation.flip = "left";
 settings.cardAnimation.turns = "1";
 settings.cardAnimation.overshoot = "0%";
-settings.cardAnimation.duration.value = "1000ms";
+settings.cardAnimation.duration.value = "750ms";
 settings.cardAnimation.duration.randomness = "0%";
 settings.cardAnimation.timing = "ease";
-settings.cardAnimation.delay.value = "500ms";
+settings.cardAnimation.delay.value = "0ms";
 settings.cardAnimation.delay.randomness = "0%";
 
 var spreadSheet;
